@@ -29,7 +29,7 @@ public class bankMainClass
         // method call to take user input
         myCx.getCxAcc();
     }
-
+git
     // command line inputs through parameterized constructors
     private bankMainClass(String username, String password)
     {
