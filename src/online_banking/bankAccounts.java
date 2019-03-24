@@ -18,6 +18,9 @@ public class bankAccounts
     void withdraw()
     {
         System.out.println("Please enter account type from which you would like to withdraw money from ?");
+        System.out.println("current");
+        System.out.println("savings");
+        System.out.println("joint");
         String accType = myScanner.nextLine();
 
         System.out.println("Enter the amount to be withdrawn ?");
@@ -76,6 +79,9 @@ public class bankAccounts
     void deposit()
     {
         System.out.println("Please enter which account type to  which you would like to deposit the amount ?");
+        System.out.println("current");
+        System.out.println("savings");
+        System.out.println("joint");
         String accType = myScanner.nextLine();
 
         System.out.println("Enter the amount to be deposited.");
@@ -95,18 +101,21 @@ public class bankAccounts
             if(accType.equalsIgnoreCase("current"))
             {
                 cAccBal = cAccBal + depAmt;
+                System.out.println("Amount Deposited");
                 System.out.println("The Current Account Balance is : " + cAccBal);
             }
             // valid account type
             else if(accType.equalsIgnoreCase("savings"))
             {
                 sAccBal = sAccBal + depAmt;
+                System.out.println("Amount Deposited");
                 System.out.println("The Savings Account Balance is : " + sAccBal);
             }
             // valid account type
             else if(accType.equalsIgnoreCase("joint"))
             {
                 jAccBal = jAccBal + depAmt;
+                System.out.println("Amount Deposited");
                 System.out.println("The Joint Account Balance is : " + jAccBal);
             }
             // invalid account type
@@ -126,9 +135,15 @@ public class bankAccounts
     void transfer()
     {
         System.out.println("Enter the account type you wish to transfer from ?");
+        System.out.println("current");
+        System.out.println("savings");
+        System.out.println("joint");
         String srcAccType = myScanner.nextLine();
 
         System.out.println("Enter the account type you wish to transfer to ?");
+        System.out.println("current");
+        System.out.println("savings");
+        System.out.println("joint");
         String destAccType = myScanner.nextLine();
 
         System.out.println("How much would you like to transfer?");
@@ -267,6 +282,9 @@ public class bankAccounts
     void checkBalance()
     {
         System.out.println("Please enter which account type would you like to check the balance of ?");
+        System.out.println("current");
+        System.out.println("savings");
+        System.out.println("joint");
         String accountType = myScanner.nextLine();
 
         if(accountType.equalsIgnoreCase("Current")){
