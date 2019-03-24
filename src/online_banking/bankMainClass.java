@@ -86,7 +86,7 @@ public class bankMainClass
         System.out.println("4. Check Balance");
         System.out.println("5. Log Out");
 
-        int userChoice = myScanner.nextInt();
+        int userChoice = Integer.parseInt(myScanner.nextLine());
 
         // bank operations & accountTypes are defined in bankAccounts class in the same package as bankMainClass
         // obj of bankAccounts class
@@ -94,31 +94,31 @@ public class bankMainClass
 
         switch (userChoice)
         {
-            case 1:
+            case 1 :
                 // call deposit method of bankAccounts with its obj
                 myAccOp.deposit();
                 // to enter next choice
                 getCxChoice();
                 break;
-            case 2:
+            case 2 :
                 // call withdraw method of bankAccounts with its obj
                 myAccOp.withdraw();
                 // get next choice
                 getCxChoice();
                 break;
-            case 3:
+            case 3 :
                 // call transfer method of bankAccounts with its obj
                 myAccOp.transfer();
                 // to get next choice
                 getCxChoice();
                 break;
-            case 4:
+            case 4 :
                 // call balance method of bankAccounts with its obj
                 myAccOp.checkBalance();
                 // to get next choice
                 getCxChoice();
                 break;
-            case 5:
+            case 5 :
                 System.out.println("You choose to exit.");
                 // call log out
                 logOut();
