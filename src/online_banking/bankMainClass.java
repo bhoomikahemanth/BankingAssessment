@@ -10,10 +10,10 @@ import java.util.Scanner;
 public class bankMainClass
 {
 
+    Scanner myScanner = new Scanner(System.in);
+
     private String userName;
     private String passWord;
-
-    Scanner myScanner = new Scanner(System.in);
 
     // Main Program Execution begins here
     public static void main(String[] args)
@@ -29,7 +29,6 @@ public class bankMainClass
         // method call to take user input
         myCx.getCxAcc();
     }
-git
     // command line inputs through parameterized constructors
     private bankMainClass(String username, String password)
     {
